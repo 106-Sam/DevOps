@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowEC2ReadAccess",
+            "Effect": "Allow",
+            "Action": "ec2:Describe*",
+            "Resource": "*"
+        },
+        {
+            "Sid": "AllowEC2StartStopReboot",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:RebootInstances"
+            ],
+            "Resource": "arn:aws:ec2:*:969079689686:instance/*",
+            "Condition": {
+                "StringEquals": {
+                    "ec2:ResourceTag/Owner": "mas"
+                }
+            }
+        }
+    ]   
+}
