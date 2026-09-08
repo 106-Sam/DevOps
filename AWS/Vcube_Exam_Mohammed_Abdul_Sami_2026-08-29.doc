@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html><head><meta charset="UTF-8"/>
+<style>
+  body{font-family:Arial,sans-serif;margin:0;padding:20px;color:#111;}
+  .cover{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;padding:30px 36px;border-radius:12px;margin-bottom:24px;}
+  .cover h1{font-size:26px;font-weight:800;margin:0 0 6px;}
+  .cover .sub{opacity:.8;font-size:14px;}
+  .meta-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:16px;margin-bottom:22px;}
+  .meta-item label{display:block;font-size:10px;text-transform:uppercase;color:#9ca3af;letter-spacing:.8px;margin-bottom:4px;}
+  .meta-item span{font-size:16px;font-weight:800;color:#111827;}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th{background:#4f46e5;color:#fff;padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px;border:1px solid #4338ca;}
+  @media print{body{padding:10px;} .cover{-webkit-print-color-adjust:exact;print-color-adjust:exact;} th{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}
+</style></head><body>
+<div class="cover">
+  <h1>📋 Vcube Exam — Answer Sheet</h1>
+  <div class="sub">Vcube Software Solutions · Multi Cloud DevSecOps Program</div>
+</div>
+<div class="meta-grid">
+  <div class="meta-item"><label>Student</label><span>Mohammed Abdul Sami</span></div>
+  <div class="meta-item"><label>Batch</label><span>AWS Batch 18</span></div>
+  <div class="meta-item"><label>Score</label><span>21/25</span></div>
+  <div class="meta-item"><label>Result</label><span>84% · 👍 Good Pass</span></div>
+</div>
+<table>
+  <thead><tr><th style="width:40px">#</th><th>Question · Your Answer · Correct Answer · Explanation</th><th>Status</th></tr></thead>
+  <tbody>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">1</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Compare an AWS security group with a network ACL.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">AWS security groups are stateful firewall and it verifies only the request traffic but not response traffic. basically it doesn't check outbound rules while responding to a request which is allowed in Inbound rules. It only has allow rules. 
+
+Network ACL (NACL)  are stateless firewall - it verifies both request and response traffic. basically it check. It supports both Allow and Deny rules</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">A security group is stateful, associated with elastic network interfaces, and has allow rules only. A network ACL is stateless, associated with a subnet, supports allow and deny rules in numbered order, and requires return-path rules. They provide complementary layers.</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Confusing statefulness or scope is a common cause of broken connectivity and weak network policy.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">2</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Which rule type is supported by an AWS security group?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">Allow rules only</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Allow rules only</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Security groups contain allow rules; all rules are evaluated together and unmatched traffic is denied.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">3</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Which IPv4 range is private according to RFC 1918?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">10.0.0.0/8</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">10.0.0.0/8</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> 10.0.0.0/8 is private; the other listed /8 ranges are not RFC 1918 private blocks.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">4</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Which Transit Gateway construct represents a connected VPC or VPN?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">Attachment</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Attachment</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> A VPC, VPN, peering, or other supported connection is represented by a Transit Gateway attachment.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">5</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">What is the main architectural role of AWS Transit Gateway?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">A regional hub that connects multiple VPCs and supported networks</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">A regional hub that connects multiple VPCs and supported networks</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Transit Gateway centralizes routing among many VPCs, VPNs, and supported attachments, reducing a peering mesh.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#fff5f5;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">6</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">A Network Load Balancer can provide static IP addresses per enabled Availability Zone and can use Elastic IP addresses for an internet-facing load balancer.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#dc2626">False</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> This stable addressing is useful for allowlists and clients that require fixed IPs.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#dc2626">❌ Wrong</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">7</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Which statement about AWS VPC peering is correct?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">The VPC CIDR ranges must not overlap</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">The VPC CIDR ranges must not overlap</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> VPC peering requires non-overlapping address spaces and explicit routes; it is non-transitive and normal security controls still apply.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">8</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Explain Transit Gateway route-table association and propagation.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">Transit Gateway route-table association is the way we can communicate between two or more transit gateway peered from two or more regions. we can communicate to all the machines attached to the Transit gateway in the one connection only by creating Static routes.</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Association determines which Transit Gateway route table an attachment uses to look up outbound routes. Propagation determines which attachment routes are dynamically inserted into selected Transit Gateway route tables. Deliberate association, propagation, and static blackhole routes can create segmented connectivity.</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Association controls route lookup for traffic entering from an attachment; propagation controls route learning into tables.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#fff5f5;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">9</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Describe the request path through an internet-facing ALB.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#dc2626">The request path can be changed in the ALB by using different TG and attaching that to one another</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">DNS resolves the ALB name to load-balancer nodes. A listener accepts HTTP or HTTPS, optionally terminates TLS with an ACM certificate, evaluates listener rules, selects a target group, and forwards to a healthy target. Security groups, subnet routing, health checks, and application ports must permit the path.</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> An ALB request crosses DNS, listener/rules, target-group health, and network controls before reaching the application.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#dc2626">❌ Wrong</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">10</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Explain CIDR prefix length using /24 and /28 as examples.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">CIDR prefix length tells us about how many bits of IPv4 address are possible in that range.
+
+Example: 
+- /24 Prefix length - The IPv4 is of total 32 bits in that if we subtract it with 24 as per our CIDR prefix lengh. 32-24=8. Now we can do 2 power 8 it give us 256 IP addresses and 1 will be used as broadcast address and other address so remainingly we can use only 254 in normal networking communication but as in AWS we can only use 251 for some reason.
+
+- /28 - same as above we can do 32-28=4, and then we will get 2 power 4 which is 16 address out of which 2 are we can't use so in normal networking we can use only 14 but in the AWS networking we can only use 12 addresses.
+
+therefore, In /24 = 251 IPv4 address are possible in AWS, and in /28 = 12 IPv4 address are possible in AWS networking.</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">The prefix length is the number of network bits in an IP address. IPv4 /24 leaves 8 host bits and contains 256 addresses; /28 leaves 4 host bits and contains 16. AWS reserves five addresses per subnet, so the normally assignable counts are 251 and 11 respectively.</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> A longer prefix means a smaller address block; AWS subnet reservations must be included in capacity planning.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">11</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Two subnets in the same VPC must use non-overlapping CIDR blocks.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> A subnet CIDR must be contained in the VPC CIDR and cannot overlap another subnet CIDR in that VPC.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">12</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">When should an architect choose an NLB instead of an ALB?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">We need to choose an NLB instead of an ALB when we need 3-tier level architecture and if it requires OSI layer 4 (transport layer). If the architect requires TCP/UDP protocols instead of HTTP & HTTPS applications.</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Choose NLB for very high-performance Layer-4 TCP/UDP/TLS workloads, static or Elastic IP requirements, source-IP behavior, or protocols that are not HTTP. Choose ALB when HTTP-aware host, path, header, redirect, authentication, or Lambda-routing features are required.</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> The primary decision is transport-level versus HTTP application-level routing and the addressing features required.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">13</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Which AWS address remains allocated to an account until explicitly released, subject to service rules and charges?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">Elastic IP address</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Elastic IP address</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> An Elastic IP is a static public IPv4 allocation that can be remapped to supported resources; unused or public IPv4 addresses may incur charges.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">14</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">If VPC A peers with VPC B and B peers with C, A cannot reach C through B solely because of those peering links.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> VPC peering does not support edge-to-edge transitive routing; use direct peerings or a transit architecture.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">15</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">What must normally be added after a VPC peering connection becomes active to enable subnet traffic?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">Routes to the peer CIDR in the relevant route tables</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Routes to the peer CIDR in the relevant route tables</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Each side needs routes that send the peer CIDR through the peering connection, plus security controls that permit the flow.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">16</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">How many usable host addresses are normally available in an AWS /24 IPv4 subnet?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">251</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">251</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> A /24 contains 256 addresses, and AWS reserves the first four and last address in each subnet, leaving 251 assignable addresses.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">17</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">List key checks when peered EC2 instances cannot communicate.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">The check when VPC peered EC2 instances cannot communicate.
+
+1. Route Table - First we need to check if we have allowed the routing from one VPC CIDR to the other connected VPC CIDR. and make sure to associate it with the VPC peering connection and the drop down should be selected the VPC Peering ID. On both the VPC's Route tables on both ends. 
+
+2. Security Group - Need to check if we are allowing the traffic to each other in the both Security Groups associated to the both VPCs. 
+
+3. Same CIDR - We should not have same CIDR values in both VPCs as it gets confused which VPC is trying to communicate under which network, etc.</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Verify peering is active, CIDRs do not overlap, and both relevant route tables contain peer-CIDR routes through the peering connection. Check security-group rules, network ACLs in both directions, host firewalls, DNS settings when names are used, and that the application listens on the expected address and port.</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Peering provides a path but does not automatically configure routes, permissions, host policy, or application listeners.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#fff5f5;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">18</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Which ALB feature routes api.example.com and shop.example.com to different target groups?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#dc2626">A subnet network ACL</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Host-based listener rules</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> ALB listener rules can evaluate the Host header and forward requests to different target groups.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#dc2626">❌ Wrong</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">19</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">An Application Load Balancer supports HTTP and HTTPS routing but does not provide UDP listeners.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> ALB is a Layer-7 HTTP load balancer; use NLB for UDP transport flows.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#fff5f5;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">20</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Which target is appropriate for preserving the client source IP in common NLB designs?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#dc2626">A Route 53 hosted zone target</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Targets reached through NLB transport-layer forwarding with the relevant target settings</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> NLB is designed for transport-layer forwarding and supports client-IP preservation behavior depending on target type and protocol.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#dc2626">❌ Wrong</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">21</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">Transit Gateway route tables can segment attachments into isolated routing domains.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Attachments can associate with one route table and propagate routes to selected route tables, supporting segmentation such as production and non-production.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">22</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">AWS security groups are stateful, so response traffic for an allowed flow is automatically allowed.</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">True</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Connection tracking permits return traffic regardless of an explicit reverse-direction rule.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">23</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">What is a safer SSH rule than allowing TCP 22 from 0.0.0.0/0?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">Allow TCP 22 only from an approved administrator CIDR or controlled access path</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Allow TCP 22 only from an approved administrator CIDR or controlled access path</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Restrict the source and prefer managed access such as Systems Manager Session Manager or a controlled bastion/VPN rather than broad internet exposure.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">24</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">At what layer does an AWS Network Load Balancer primarily operate?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">Layer 4</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">Layer 4</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> NLB handles high-performance TCP, UDP, and TLS flows at the transport layer.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr>
+      <tr style="background:#f0fdf4;page-break-inside:avoid;">
+        <td style="padding:10px 12px;font-weight:700;color:#374151;border:1px solid #e5e7eb;vertical-align:top;width:36px;">25</td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;">
+          <div style="font-size:13px;font-weight:600;color:#111827;margin-bottom:6px;">What happens when every target in an ALB target group fails health checks?</div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Your Answer:</strong> <span style="color:#059669">The targets are considered unhealthy and normal healthy-target routing cannot continue as designed</span></div>
+          <div style="font-size:12px;margin-bottom:4px;"><strong>Correct Answer:</strong> <span style="color:#059669">The targets are considered unhealthy and normal healthy-target routing cannot continue as designed</span></div>
+          <div style="font-size:12px;background:#eff6ff;border-left:3px solid #4f46e5;padding:6px 10px;border-radius:4px;color:#1e3a8a;margin-top:6px;"><strong>💡 Explanation:</strong> Health checks determine target eligibility. Auto Scaling may replace instances if separately configured, but the ALB itself does not create them.</div>
+        </td>
+        <td style="padding:10px 12px;border:1px solid #e5e7eb;vertical-align:top;white-space:nowrap;font-weight:700;font-size:12px;color:#059669">✅ Correct</td>
+      </tr></tbody>
+</table>
+<div style="margin-top:20px;text-align:center;font-size:11px;color:#9ca3af;">
+  Generated by Vcube Exam Portal · 29/08/2026, 14:19:18
+</div>
+</body></html>
