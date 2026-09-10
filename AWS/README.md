@@ -19,4 +19,17 @@
 - Give it a Role name, & Create Role. Ex:- "EC2-SSM-Instances"
 
 
-2. 
+2. Create an EC2 Instances 
+
+- Deploy the Public & Private Servers [I already have 3 Public & 3 Private Subnets(RT - subnet association in Private Subnets)].
+- While creating the EC2 instances - Advance details > IAM Instance Profile  select the Role (which we created in Step1).
+- We must not attach a key pair not needed for SSM. 
+- Security Group must allow HTTP & SSH 
+- RT table Pub-RT needs IGW (Internet Gateway) & PVT-RT just the SG default.
+  
+
+3.  Create VPC Endpoints (PrivateLink)
+   
+- 
+
+4.  
