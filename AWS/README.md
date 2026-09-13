@@ -8,7 +8,7 @@
 - We use VPC Endpoint only when we want traffic to move internally (but not over the internet).
 - For Internal Routing
 
-#### How to securely manage an isolated EC2 instance in a private subnet using ***AWS Systems Manager (SSM) Session Manager*** via ***VPC Interface Endpoints (PrivateLink), completely elimination the need for an IGW, NAT Gateway, or open Inbound ports.***
+#### How to securely manage an isolated EC2 instance in a private subnet using ***AWS Systems Manager (SSM) Session Manager*** via ***VPC Interface Endpoints, completely elimination the need for an IGW, NAT Gateway, or open Inbound ports.***
 
 1. IAM Role Configuration
 
@@ -28,7 +28,7 @@
 - RT table Pub-RT needs IGW (Internet Gateway) & PVT-RT just the SG default.
   
 
-3.  Create VPC Endpoints (PrivateLink)
+1.  Create VPC Endpoints
    
 - 
 
