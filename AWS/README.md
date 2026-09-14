@@ -3,7 +3,7 @@
 
 
 
-### VPC Endpoints
+## VPC Endpoints
 
 - AWS VPC Endpoints allow instances in a VPC to privately access supported AWS services without requiring an IGW, NAT gateway, VPN, or AWS Direct Connect connections.
 - We use VPC Endpoint only when we want traffic to move internally (but not over the internet).
@@ -63,3 +63,23 @@ There are 2 types of Endpoint:
      - After creating 3 endpoints to all 3 subnets, endpoints are able to the 3 Private subnets.
 
 Note: In private servers, you won't be able to connect to Internet whereas Public server, will be connected to the Internet.
+
+#### Interface Endpoint
+
+  1. Create 2 S3 buckets.
+   
+     - Create a bucket --> Name1 --> use all defaults and create bucket upload some files in two buckets.
+     - After this try connecting to Pub-Server & Private-server EC2 Instances.
+     - Pub-server is able download the s3 bucket files over the internet while Pvt-server isn't able to connect over the internet that is the reason it cannot download the files, for this we need endpoints.
+     - 
+
+What interface endpoints do? 
+Ans: It will create Elastic network Interface(ENI) endpoints for each subnet.
+
+
+
+#### Gateway Endpoint
+
+
+What Gateway Endpoint do?
+Ans: It will add a route in routing table.
