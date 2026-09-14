@@ -28,8 +28,13 @@
 - RT table Pub-RT needs IGW (Internet Gateway) & PVT-RT just the SG default.
   
 
-1.  Create VPC Endpoints
-   
-- 
+3.  Create VPC Endpoints
+  
+- Create 3 VPC Endpoints one *ec2messages, ssmmessages & ssm.*
+- For *ec2messages, ssm* enable all the Private subnets.
+- For *ssmmessages*, enable 1 Private subnets.
+- Select IPv4, then SG- private ones.
+- Note: we can modify the subnets and all configurations.
+  
 
 4.  
