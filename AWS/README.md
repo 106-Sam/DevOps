@@ -36,5 +36,9 @@
     - Select IPv4, then SG- private ones.
     - Note: we can modify the subnets and all configurations.
   
-
-4.  
+  
+4.   Connecting machines via SSM.
+   
+     - After searching "Session Manager", Start Session.
+     - And you will be able to connect the ec2 instances without keys, privately using VPC Endpoints.
+     - For Internet we will be needing the NAT Gateway as usual.
