@@ -218,4 +218,7 @@ You can check aws calculator s3 -> check estimate
 
 4. Create a Folder and mount it.
 
-   - m
+   - mkdir EBS/
+   - mount /dev/nvme1n1p2 EBS/
+   - lsblk 
+   - Now you will see the attached volume
