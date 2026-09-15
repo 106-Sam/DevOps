@@ -86,7 +86,7 @@ Ans: It will create Elastic network Interface(ENI) endpoints for each subnet.
       - Now, let us create the Endpoint type "gateway" and  S3 as service name(but choose gateway).
       - Select the VPC and it's Private Route table and create Endpoint.
       - Once Gateway endpoint is created, it will update Routing Table.
-      - Now, we will be able to download from private server.
+      - Now, we will be able to download from private server. (First do aws configure)
 
 
 
