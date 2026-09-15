@@ -119,10 +119,14 @@ Difference between Instance Store Volume & EBS Volume
 
 | Instance Store Volume | EBS Volume |
 | --- | --- |
-| The data is not permenant here |  |
-| It is only for specific instance type |  |
-| It is of fixed size |  |
-| You cannot detach and attach to different servers |  |
+| The data is not permenant here | The data is permenant here |
+| It is only for specific instance type (c5d.large) | It is availabe in all instance types (t3.micro) |
+| It is of fixed size | it is not fixed siez |
+| You cannot detach and attach to different servers | it can attach & detach EBS volumes |
 | It is used for virtual memory [jpage files] |  |
-|  |  |
-|  |  |
+
+_Note: EBS & EC2 must be in the same availability zone._
+
+#### Attaching EBS to Windows Machine 
+
+
