@@ -13,7 +13,7 @@
 9. S3 Bucket
 10. IAM (Identity & Access Management) 
 11. IAM Extras
-12. [VPC Endpoint ](https://github.com/106-Sam/DevOps/tree/main/AWS#12-vpc-endpoints)
+12. [VPC Endpoint](https://github.com/106-Sam/DevOps/tree/main/AWS#12-vpc-endpoints)
 13. EBS Volume (Elastic Block Storage)
 14. RDS (Relational Database Scheme)
 15. Cloud Watch
