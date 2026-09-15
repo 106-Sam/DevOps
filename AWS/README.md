@@ -222,3 +222,7 @@ You can check aws calculator s3 -> check estimate
    - mount /dev/nvme1n1p2 EBS/
    - lsblk 
    - Now you will see the attached volume
+
+
+
+## 14. RDS (Relational Database Schema)
