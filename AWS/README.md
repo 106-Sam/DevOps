@@ -120,15 +120,9 @@ Difference between Instance Store Volume & EBS Volume
 | Instance Store Volume | EBS Volume |
 | --- | --- |
 | The data is not permenant here |  |
-| --- | --- |
 | It is only for specific instance type |  |
-| --- | --- |
 | It is of fixed size |  |
-| --- | --- |
 | You cannot detach and attach to different servers |  |
-| --- | --- |
 | It is used for virtual memory [jpage files] |  |
-| --- | --- |
 |  |  |
-| --- | --- |
 |  |  |
