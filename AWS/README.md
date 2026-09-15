@@ -1,9 +1,27 @@
 # AWS - Amazon Web Service
 
+**Index of Content**
 
+1. AWS Account Creation
+2. IP Addressing
+3. VPC Peering (Virtual Private Cloud)
+4. Transit Gateway & NAT Gateway
+5. Security Group (SG)
+6. Network Load Balancer (NLB)
+7. Application Load Balancer (ALB)
+8. Global Accelerator & WAF Routing Policies
+9. S3 Bucket
+10. IAM (Identity & Access Management) 
+11. IAM Extras
+12. [VPC Endpoint ]([Amazon Web Service](https://github.com/106-Sam/DevOps/tree/main/AWS#aws---amazon-web-service))
+13. EBS Volume (Elastic Block Storage)
+14. RDS (Relational Database Scheme)
+15. Cloud Watch
+16. Auto Scaling Group (ASG)
 
+[Amazon Web Service](https://github.com/106-Sam/DevOps/tree/main/AWS#aws---amazon-web-service)
 
-## VPC Endpoints
+## 12. VPC Endpoints
 
 - AWS VPC Endpoints allow instances in a VPC to privately access supported AWS services without requiring an IGW, NAT gateway, VPN, or AWS Direct Connect connections.
 - We use VPC Endpoint only when we want traffic to move internally (but not over the internet).
