@@ -19,6 +19,7 @@
 15. Cloud Watch
 16. Auto Scaling Group (ASG)
 
+--- 
 
 ## 12. VPC Endpoints
 
@@ -109,3 +110,5 @@ Ans: It will create Elastic network Interface(ENI) endpoints for each subnet.
 
 What Gateway Endpoint do?
 Ans: It will add a route in routing table.
+
+---
