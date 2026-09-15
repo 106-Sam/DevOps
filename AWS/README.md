@@ -15,7 +15,7 @@
 11. IAM Extras
 12. [VPC Endpoint](https://github.com/106-Sam/DevOps/tree/main/AWS#12-vpc-endpoints)
 13. [EBS Volume (Elastic Block Storage)](https://github.com/106-Sam/DevOps/tree/main/AWS#13-ebs-volume-elastic-block-storage)
-14. RDS (Relational Database Scheme)
+14. [RDS (Relational Database Scheme)](https://github.com/106-Sam/DevOps/tree/main/AWS#14-rds-relational-database-schema)
 15. Cloud Watch
 16. Auto Scaling Group (ASG)
 
