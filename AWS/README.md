@@ -66,11 +66,11 @@ Note: In private servers, you won't be able to connect to Internet whereas Publi
 
 #### Interface Endpoint
 
-  1. Create 2 S3 buckets.
+  1. Create S3 buckets.
    
      - Create a bucket --> Name1 --> use all defaults and create bucket upload some files in two buckets.
      - After this try connecting to Pub-Server & Private-server EC2 Instances.
-     - Pub-server is able download the s3 bucket files over the internet while Pvt-server isn't able to connect over the internet that is the reason it cannot download the files, for this we need endpoints.
+     - **Pub-server** is able download the s3 bucket files over the internet while **Pvt-server** isn't able to connect over the internet that is the reason it cannot download the files, for this we need endpoints.
      - 
 
 What interface endpoints do? 
@@ -79,6 +79,15 @@ Ans: It will create Elastic network Interface(ENI) endpoints for each subnet.
 
 
 #### Gateway Endpoint
+
+   1. After creation of s3 bucket.
+      
+      - If you see in the VPC, and check the Private Route Table, you will see only one route that will be local.
+      - Now, let us create the Endpoint type "gateway" and  S3 as service name(but choose gateway).
+      - Select the VPC and it's Private Route table and create Endpoint.
+      - Once Gateway endpoint is created, it will update Routing Table.
+      - Now, we will be able to download from private server.
+
 
 
 What Gateway Endpoint do?
