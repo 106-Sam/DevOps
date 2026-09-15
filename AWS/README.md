@@ -19,7 +19,6 @@
 15. Cloud Watch
 16. Auto Scaling Group (ASG)
 
-[Amazon Web Service](https://github.com/106-Sam/DevOps/tree/main/AWS#aws---amazon-web-service)
 
 ## 12. VPC Endpoints
 
