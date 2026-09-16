@@ -16,8 +16,9 @@
 12. [VPC Endpoint](https://github.com/106-Sam/DevOps/tree/main/AWS#12-vpc-endpoints)
 13. [EBS Volume (Elastic Block Storage)](https://github.com/106-Sam/DevOps/tree/main/AWS#13-ebs-volume-elastic-block-storage)
 14. [RDS (Relational Database Scheme)](https://github.com/106-Sam/DevOps/tree/main/AWS#14-rds-relational-database-schema)
-15. Cloud Watch
-16. Auto Scaling Group (ASG)
+15. [VPC Flow Logs](https://github.com/106-Sam/DevOps/tree/main/AWS#15-vpc-flow-logs)
+16. Cloud Watch
+17. Auto Scaling Group (ASG)
 
 --- 
 
@@ -271,4 +272,7 @@ mysqldb - mysql workbench
 mssql - ssms
 mongodb - mongo express
 
-3. 
+3. Check failover using nslookup command
+
+
+## 15. VPC Flow Logs 
