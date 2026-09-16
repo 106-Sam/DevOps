@@ -275,4 +275,74 @@ mongodb - mongo express
 3. Check failover using nslookup command
 
 
-## 15. VPC Flow Logs 
+## 15. VPC Flow Logs
+
+   - By using VPC Flow logs, we montior what kind of traffic is going out and what kind of traffic is coming in. 
+   - ENI card (NIC) provide the traffic in and traffic out.
+   - We connect this to Cloud Watch.
+   - All the Cloud Watch data must be stored in the LOG GROUP. We create an IAM role for this.
+
+
+1. Create a IAM role
+   
+      - Create role > Custom Trust Policy
+ ```
+ {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VPCFlowLogsPolicy",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "vpc-flow-logs.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+} 
+
+ ```   
+      - Create the role with anme vpcflowlogs
+  
+   2. Create the IAM Policy.
+   
+      - Create the Policy to attach it to the above role for having permission to create the logs and etc.
+
+```
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VPCFlowLogsPermission",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "logs:DescribeLogGroups",
+                "logs:DescribeLogStreams"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+```
+      -  VPC flow logs policy attach the policy to the IAM role.
+  
+3. Creation of Log Groups & setup of Flow Los
+
+      -  Create a machine after this create the logs groups 
+      -  Cloud Watch > Log Management >  name123  rest all default.
+      -  go to the respective VPC, edit it 'Flow Logs' > Create a flow Log
+      -  Filter = All 
+      -  Maximum aggregation interval = 1 min 
+      -  Destination = Send to CloudWatch Logs 
+      -  Select the destination log group.
+      -  Selet Service role > create role
+
+
+4. Verify  Log Streams
+   - Log management > name123 > Logstream
+   - Double click and 
