@@ -226,3 +226,9 @@ You can check aws calculator s3 -> check estimate
 
 
 ## 14. RDS (Relational Database Schema)
+
+
+In 3-Tier Architecture, we have used IaaS model (Infrastructure as a Server) for MYSQL in EC2 Instance. Now lets see how to use PaaS model (Platform as a Service)
+
+![RDS-Failover]()
+
