@@ -230,5 +230,45 @@ You can check aws calculator s3 -> check estimate
 
 In 3-Tier Architecture, we have used IaaS model (Infrastructure as a Server) for MYSQL in EC2 Instance. Now lets see how to use PaaS model (Platform as a Service)
 
+
+The RDS, supports 8 Databases: 
+
+1. Aurora (MySQL Compatible)
+2. Aurora (PostgreSQL Compatible)
+3. MySQL
+4. PostgreSQL
+5. MariaDB
+6. Oracle database - AWS doesn't provide Oracle license so, we need to get our own licence rest all databases license is provided by AWS (Bring your OWN license)
+7. Microsoft SQL Server
+8. IBM Db2
+
+#### Installing the DB
+
 ![RDS-Failover](https://github.com/106-Sam/DevOps/blob/main/AWS/files/RDS-failover.png "RDS AWS")
 
+
+1. Create the Database
+ 
+   Aurora & RDS > Databases > create database > db creation (Full configuration) > Templates (Dev/Test) > Availability and durability (Multi-AZ DB instance deployment 2 instance)
+
+   Remaining proivde the default settings
+
+   master username = sqladmin
+   Managed in AWS Secrets Manager (for Github action)
+   Self managed (we need to create it there)
+
+   Burstable class (includes t classes)
+   Instance type = db.t3.micro
+   Storage type = ssd gp3 ( but in real time need to take io1 & io2)
+   Allocated storage = 20GiB
+   Select VPCs
+
+   No public create private
+
+2. Connection Tools
+
+mysqldb - mysql workbench
+mssql - ssms
+mongodb - mongo express
+
+3. 
