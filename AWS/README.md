@@ -345,4 +345,4 @@ mongodb - mongo express
 
 4. Verify  Log Streams
    - Log management > name123 > Logstream
-   - Double click and 
+   - Double click and check the log events
