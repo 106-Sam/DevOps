@@ -302,7 +302,7 @@ mongodb - mongo express
 } 
 
  ```   
-      - Create the role with anme vpcflowlogs
+      - Create the role with name vpcflowlogs
   
    2. Create the IAM Policy.
    
