@@ -340,7 +340,7 @@ mongodb - mongo express
       -  Maximum aggregation interval = 1 min 
       -  Destination = Send to CloudWatch Logs 
       -  Select the destination log group.
-      -  Selet Service role > create role
+      -  Select Service role >  and use the created role
 
 
 4. Verify  Log Streams
