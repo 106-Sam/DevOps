@@ -331,7 +331,7 @@ mongodb - mongo express
 ```
       -  VPC flow logs policy attach the policy to the IAM role.
   
-3. Creation of Log Groups & setup of Flow Los
+3. Creation of Log Groups & setup of Flow Logs
 
       -  Create a machine after this create the logs groups 
       -  Cloud Watch > Log Management >  name123  rest all default.
