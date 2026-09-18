@@ -80,7 +80,17 @@ Step4: Create Virtual Machine
       -  NIC = Basic
       -  Public Inbound Ports = 22 
       -  Create VM
+  
+Step5: Create the VNG (Virtual Network Gateway) on your Azure Portal
 
+      - Search "Virtual Network Gateway" > under VPN Gateway dropdown > select VPN gateway option (left side column)
+      - Create VNG > "name123" > SKU = VpnGw1AZ > select the Virtual Network = the Vnet (created by us before)
+      -  It automatically provide the Gateway subnet 
+      -  Public IP address > create new  & provide its name 
+      -  Disable remaining things below this 
+      -  This take minimum 40-60 mins to create this VNG.
+  
+Step6 to StepX - in AWS - [click here](https://github.com/106-Sam/DevOps/blob/main/AWS/README.md#20-vpn--connection-between-azure--aws-machines)
 
 
 
