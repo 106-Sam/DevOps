@@ -4,6 +4,7 @@
 **Index of Content**
 
 1. [Azure Account Creation](https://github.com/106-Sam/DevOps/tree/main/AZURE#1-azure-account-creation)
+2. [VPN Gateway for connection between the AWS & Azure Machine]()
 
 
 
@@ -32,7 +33,6 @@ Incase we have student emails Azure provides 1 year access
 4. Check the subscription activate or not by searching subscription and notification alert of $200 credits
 
 
-| --- | --- |
 | AWS | AZURE |
 | --- | --- |
 | None (we need to delete resources one by one if created) | Resource Group (all our resource will be in this folder and we can delete it all at once) |
@@ -45,7 +45,7 @@ Incase we have student emails Azure provides 1 year access
 
 VPN Gateway (VNG) takes 40-60 mins to be created
 
-#### VPN Gateway for connection between the AWS & Azure Machine - 
+## 2. VPN Gateway for connection between the AWS & Azure Machine 
 
 
 Step1: create Resource group under a region
