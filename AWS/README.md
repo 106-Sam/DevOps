@@ -416,4 +416,4 @@ AWS:
       3. Route Table: <Azure Vnet IP address range>  use VPG 
 
 
-Step9 - in AWS - [click here](https://github.com/106-Sam/DevOps/blob/main/AWS/README.md#20-vpn--connection-between-azure--aws-machines)
+Step9 - in Azure - [click here](https://github.com/106-Sam/DevOps/blob/main/AWS/README.md#20-vpn--connection-between-azure--aws-machines)
