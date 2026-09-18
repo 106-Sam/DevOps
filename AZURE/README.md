@@ -36,5 +36,21 @@ Incase we have student emails Azure provides 1 year access
 | AWS | AZURE |
 | --- | --- |
 | None (we need to delete resources one by one if created) | Resource Group (all our resource will be in this folder and we can delete it all at once) |
+| VPC | Vnet |
+| Subnet | Subnet |
+| Internet Gateway | None |
+| Route table | None |
+| Security Group (SG) | Network Security Group (NSG) |
+| EC2 | VM |
+
+
+
+Step1: create Resourece group under a region
+Step2: Under same resource group:  add virtual Network (Vnet) & Subnet
+Step3: Create Virtual Machine
+
+
+
+
 
 
