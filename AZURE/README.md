@@ -4,7 +4,7 @@
 **Index of Content**
 
 1. [Azure Account Creation](https://github.com/106-Sam/DevOps/tree/main/AZURE#1-azure-account-creation)
-2. [VPN Gateway for connection between the AWS & Azure Machine]()
+2. [VPN Gateway for connection between the AWS & Azure Machine](https://github.com/106-Sam/DevOps/tree/main/AZURE#2-vpn-gateway-for-connection-between-the-aws--azure-machine)
 
 
 
