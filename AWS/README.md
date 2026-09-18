@@ -376,5 +376,16 @@ In templates, we can see 4 options:
 6. (Optional) If you like to copy the back in the another region, we can choose 
 
   
+How to Restore the backup ?
+
+1. AWS Backup > Vaults > Vaults created by this account.
+2. double-click the backup name (You can see Recovery points all the things that got backed up)
+3. select the points you want to back up and click Action > Restore 
+     
+      - It will prompt you for network settings VPC, SUbnet, SG, Instance IAM role, Storage
+      - If its an EC2 instance, you won't be attached to Public IP. Therefore, you need to create an EIP (Elastic IP address) 
+      - Assocaite EIP to Instance & selec the private address in the dropdown.
+      - Now you have the Public IP 
+
 
 ## 20. VPN & Connection between Azure & AWS Machines
