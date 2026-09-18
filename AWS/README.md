@@ -355,5 +355,26 @@ mongodb - mongo express
 
 ## 19. AWS Backup (Vaults)
 
+We create the backs under the AWS Vault. And we can restore the backups from the Vault. 
+
+- We will have 30 days retention period. Basically today back will be there for 30 days and so on vice versa.
+
+1. AWS Backup > Job dashboard > Create Backup Plan > Start with a template 
+  Give the backup plan a name.
+
+In templates, we can see 4 options:
+
+  - Daily-35day-Retention
+  - Daily-Monthly-1yr-Retention
+  - Daily-Weekly-Monthly-5yr-Rentention
+  - Daily-Weekly-Monthly-7yr-Rentention
+
+2. create Backup rule keep the backup frequency as per our need like hourly, every 12 hours, daily, custom cron expression...etc.
+3. Choose the backup window date, time and timezone
+4. We can reduce and update the rentention days etc.
+5. under backup indexes Select the where to be store like s3 or EBS 
+6. (Optional) If you like to copy the back in the another region, we can choose 
+
+  
 
 ## 20. VPN & Connection between Azure & AWS Machines
