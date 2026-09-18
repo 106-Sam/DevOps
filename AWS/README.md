@@ -19,6 +19,9 @@
 15. [VPC Flow Logs](https://github.com/106-Sam/DevOps/tree/main/AWS#15-vpc-flow-logs)
 16. Cloud Watch
 17. Auto Scaling Group (ASG)
+18. Cloud Trail and Config
+19. [AWS Backup](https://github.com/106-sam/DevOps/tree/main/AWS#19-AWS-Backup)
+20. [VPN & connection between AZURE & AWS](https://github.com/106-sam/DevOps/tree/main/AWS#20-VPN)
 
 --- 
 
@@ -346,3 +349,11 @@ mongodb - mongo express
 4. Verify  Log Streams
    - Log management > name123 > Logstream
    - Double click and check the log events
+
+
+
+
+## 19. AWS Backup
+
+
+## 20. VPN & Connection between Azure & AWS Machines
