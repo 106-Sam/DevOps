@@ -390,6 +390,8 @@ How to Restore the backup ?
 
 ## 20. VPN & Connection between Azure & AWS Machines
 
+![VPN-AzureAWS](https://github.com/106-Sam/DevOps/blob/main/AWS/files/VPN-AWSAZURE.png "Azure AWS")
+
 
 Step1 to Step 5 - [Click here](https://github.com/106-Sam/DevOps/tree/main/AZURE#2-vpn-gateway-for-connection-between-the-aws--azure-machine)
 

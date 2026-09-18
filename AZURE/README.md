@@ -47,6 +47,8 @@ VPN Gateway (VNG) takes 40-60 mins to be created
 
 ## 2. VPN Gateway for connection between the AWS & Azure Machine 
 
+![VPN-AzureAWS](https://github.com/106-Sam/DevOps/blob/main/AWS/files/VPN-AWSAZURE.png "Azure AWS")
+
 
 Step1: create Resource group under a region
 
