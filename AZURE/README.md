@@ -90,8 +90,28 @@ Step5: Create the VNG (Virtual Network Gateway) on your Azure Portal
       -  Disable remaining things below this 
       -  This take minimum 40-60 mins to create this VNG.
   
-Step6 to StepX - in AWS - [click here](https://github.com/106-Sam/DevOps/blob/main/AWS/README.md#20-vpn--connection-between-azure--aws-machines)
+Step6 to Step8 - in AWS - [click here](https://github.com/106-Sam/DevOps/blob/main/AWS/README.md#20-vpn--connection-between-azure--aws-machines)
 
+Step9: Service Configuration for AZURE VNG to work
+
+Azure: 
+         1. local network gateway: AWS VPG Public IP address & AWS VPC IP address range.
+   
+            - select Resource, Subsciption & Region.
+            - Name > Endpoint = IP address 
+            - IP address = AWS Site to Site VPN Connection > select the VPG & download configuration. In downloaded config file, we can see Ip address 
+            - Address Space(s): VPC Ip address range > Create.
+  
+         2. Site to Site connection
+
+            - existed Vnet > Settings > Connections > Add 
+            - Select subscription, Resource name & Region.
+            - Instance detaisl > Connection type = Site to Site (IPSec)
+            - set Virtual Network Gateway (VPG) & Local network gateay
+            - Authentication method =  Shared Keys (PSK) [We'll find it in the Configuration file we downloaded under the IP ] > Create
+  
+
+Hence, we connected the EC2 to the VM 
 
 
 

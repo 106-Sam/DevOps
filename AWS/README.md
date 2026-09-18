@@ -392,3 +392,28 @@ How to Restore the backup ?
 
 
 Step1 to Step 5 - [Click here](https://github.com/106-Sam/DevOps/tree/main/AZURE#2-vpn-gateway-for-connection-between-the-aws--azure-machine)
+
+Step6: Create an EC2 instance under any existing/new VPC
+
+      - Follow the default steps.
+
+Step7: Create Virtual Private Gateway (VPG) on your AWS account
+
+      - Create VPG > "name123" > with default settings > create
+      - Attach it to the VPC of EC2 Instance
+
+Step8: Service Configuration for AWS VPG to work
+
+AWS: 
+      1. Customer gateway(AWS): AzureVPN's Public IP address (We'll find it under VNG details)
+      2. Site to Site connection: Azure Vnet IP address range
+         - site to site connection > Create VPN connection > name123 
+         - Target type = Virtual private gateway and select it.
+         - Customer gateway = Existing (just newly created one)
+         - Routing option = static 
+         - Static Ip address (Azure Vnet IP address range)
+         - Create VPN connection.
+      3. Route Table: <Azure Vnet IP address range>  use VPG 
+
+
+Step9 - in AWS - [click here](https://github.com/106-Sam/DevOps/blob/main/AWS/README.md#20-vpn--connection-between-azure--aws-machines)
