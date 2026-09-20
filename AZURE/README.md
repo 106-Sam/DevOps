@@ -107,7 +107,7 @@ Azure:
   
          2. Site to Site connection
 
-            - existed Vnet > Settings > Connections > Add 
+            - existed VNG > Settings > Connections > Add 
             - Select subscription, Resource name & Region.
             - Instance detaisl > Connection type = Site to Site (IPSec)
             - set Virtual Network Gateway (VPG) & Local network gateay
@@ -116,6 +116,7 @@ Azure:
 
 Hence, we connected the EC2 to the VM 
 
+![alt text](image.png)
 
 
 
