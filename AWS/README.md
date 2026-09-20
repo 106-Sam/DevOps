@@ -407,6 +407,7 @@ Step7: Create Virtual Private Gateway (VPG) on your AWS account
 Step8: Service Configuration for AWS VPG to work
 
 AWS: 
+
       1. Customer gateway(AWS): AzureVPN's Public IP address (We'll find it under VNG details)
       2. Site to Site connection: Azure Vnet IP address range
          - site to site connection > Create VPN connection > name123 
