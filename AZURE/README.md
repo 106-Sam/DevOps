@@ -97,6 +97,7 @@ Step6 to Step8 - in AWS - [click here](https://github.com/106-Sam/DevOps/blob/ma
 Step9: Service Configuration for AZURE VNG to work
 
 Azure: 
+      
          1. local network gateway: AWS VPG Public IP address & AWS VPC IP address range.
    
             - select Resource, Subsciption & Region.
