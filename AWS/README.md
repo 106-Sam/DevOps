@@ -17,7 +17,7 @@
 13. [EBS Volume (Elastic Block Storage)](https://github.com/106-Sam/DevOps/tree/main/AWS#13-ebs-volume-elastic-block-storage)
 14. [RDS (Relational Database Scheme)](https://github.com/106-Sam/DevOps/tree/main/AWS#14-rds-relational-database-schema)
 15. [VPC Flow Logs](https://github.com/106-Sam/DevOps/tree/main/AWS#15-vpc-flow-log)
-16. Cloud Watch
+16. [CloudWatch](https://github.com/106-Sam/DevOps/tree/main/AWS#16-cloudwatch)
 17. Auto Scaling Group (ASG)
 18. Cloud Trail and Config
 19. [AWS Backup (Vaults)](https://github.com/106-sam/DevOps/tree/main/AWS#19-aws-backup-vaults)
@@ -25,6 +25,8 @@
 21. [DynamoDB, Lambda function, API Gateway]()
 
 --- 
+
+
 
 ## 12. VPC Endpoints
 
@@ -249,7 +251,7 @@ The RDS, supports 8 Databases:
 
 #### Installing the DB
 
-![RDS-Failover](https://github.com/106-Sam/DevOps/blob/main/AWS/files/RDS-failover.png "RDS AWS")
+![RDS-Failover](../AWS/files/RDS-failover.png)
 
 
 1. Create the Database
@@ -352,6 +354,20 @@ mongodb - mongo express
    - Double click and check the log events
 
 
+## 16. CloudWatch
+
+CloudWatch is a **native montioring & alerting tool** which we can configure to email, Grafana, ITSM, Infrastructure like CPU, memory, network traffic, disc metrics. `
+
+We configure CPU 70% ==> alert ==> ticket tool
+
+First we need to push the aws package to an EC2 machine using SSM (System Manager)
+We can use SSM to install packages in the EC2 machines 
+
+Once we push it we need to configure the parameter like cpu, memeory store in parameter store
+
+then we install CloudWatchAgent, it uses parameter store to monitor the Instance parameter.
+
+![CloudWatch Architecture](../AWS/files/CloudWatch.png)
 
 
 ## 19. AWS Backup (Vaults)

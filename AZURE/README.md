@@ -116,8 +116,8 @@ Azure:
 
 Hence, we connected the EC2 to the VM 
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](../AZURE/files/image.png)
+![alt text](../AZURE/files/image-1.png)
 
 
 
