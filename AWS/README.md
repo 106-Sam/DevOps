@@ -388,7 +388,7 @@ then we install CloudWatchAgent, it uses parameter store to monitor the Instance
       - disable an S3 bucket & CloudWatch Logs
       - Click Run (wait for 2 mins for the packages to install)
 
-4.  Installation & Configuration of CloudWatchAgent
+4.  Configuration of CloudWatchAgent & Store in Parameter Store
   
     - connect to the Ec2 Mcahine via SSH 
     - cd /opt/amazon-cloudwatch-agent/bin/ [OPT directory basically used for thirdparty application/addons]
@@ -415,9 +415,42 @@ then we install CloudWatchAgent, it uses parameter store to monitor the Instance
       - It is asking for credentials to upload the json config file AWS access keys: secret keys etc...give it.
     - Location of Parameter Store SSM > Parameter Store.
 
+5. Install CloudWatchAgent using SSM on EC2
 
+      - SSM > Run command > Run a command 
+      - Select AmazonCloudWatch-ManageAgent
+      - Optional Configuration Location = <Name of the Parameter Store>
+      - Target Selection = Choose Instance manually
+      - select the EC2 Instance created
+      - disable S3 bucket & CloudWatch logs
+      - Click on the Run
 
+6.  Practical Part
+   
+      - Logon to Ec2 machine SSH 
+      - `apt install stress` (it a tools used to increase the CPU usage)
+      - top & htop is used for CPU usages
+      - `stress --cpu 8 --io 4 --vm 2 --v-bytes 128M --timeout 10s
+      - You will see that the CPU usage as increased
+      - Go to CloudWatch > Metrics [We will see CWAgent under custom namespaces it will have the count and list of monitored resources]
+      - Go to Ec2 instances and click the machine and go to monitoring  - CPU Utilization 
+  
+7. Configure an Alarms (Alert)
+   
+      - go to ClouadWatch > Alaram or From the Ec2 Machines CPU to metrics > Graphed metrics tab [below you will find a Action column there is an Alaram symbal of Bell click that]
+      - Data Source = Metrics
+      - Type = Classic 
+      - Keep the CPUUtilization setting as default except Statistic = Maximum & Whenever CPUUtilization is = Greater/Equal than 41 in the input value threshold value.
+      - Next, Send a notification to the Following SNS topic = Create new Topic
+      - New topic = 'alertCPU' 
+      - Email = <email>
+      - Creat Topic 
+      - You will recieve an Email Id click open and confirm the Subscription.
+      - Next, Alarm name = CPU_GreaterThan_41 then next, then Create. (OK state)
 
+8.   Trigger the Alarms
+
+      - Open EC2 Instance and type the command stress 
 
 ## 19. AWS Backup (Vaults)
 
