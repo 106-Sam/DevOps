@@ -369,6 +369,55 @@ then we install CloudWatchAgent, it uses parameter store to monitor the Instance
 
 ![CloudWatch Architecture](../AWS/files/CloudWatch.png)
 
+1. Create a IAM Role and add Policies
+
+      - Role Policies = AmazonEC2RoleforSSM, CloudWatchAgentAdminPolicy, CloudWatchAgentServerPolicy
+      - give role name = cloudwatch 
+  
+2. Create an EC2 Instance 
+
+      - Normal default way but Keep the Advance details > IAM instance profile = cloudwatch
+      - Launch Instance
+
+3. Push AWSPackage via SSM to EC2 instance
+   
+      - SSM > Run command > Run a command
+      - Name = AmazonCloudWatchAgent (Case-Sensitive and it must be same)
+      - Target Selection = Choose Instance Manually
+      - select the Instance that you created
+      - disable an S3 bucket & CloudWatch Logs
+      - Click Run (wait for 2 mins for the packages to install)
+
+4.  Installation & Configuration of CloudWatchAgent
+  
+    - connect to the Ec2 Mcahine via SSH 
+    - cd /opt/amazon-cloudwatch-agent/bin/ [OPT directory basically used for thirdparty application/addons]
+    - ls & ./amazon-cloudwatch-agent-config-wizard
+    - Which OS = linux
+    - Trying to fetch the default region based on ec2 metadata.. = EC2
+    - Which user are you planning to run the agent? = root
+    - Do you want to turn on StatsD daemon? = no
+    - Do you want to monitor metric from Collectd? = no 
+    - Do you want to monitor any host metrics? e.g. CPU, memory, etc. = Yes
+    - Do you want to montior cpu metrics per core? = yes
+    - Do you want to add ec2 dimensions (...) into all of your metrics if the info is available? = No
+    - Do you want to aggregate ec2 dimensions (instanceId)? = No 
+    - Would you like to collect your metircs at high resolution ? .... = 30s 
+    - Which default metrics config do you want? = Advanced
+    - Are you satisified with the above config ? .... = Yes
+    - Do you have any existing CloudWatch Log Agent = No
+    - Do you want to monitor any log files? = no
+    - Do you want to monitor journald logs? = no 
+    - Do you want to store the config in the SSm parameter store? = Yes
+    - What parameter store name do you want to use to store your config ? .... = AmazonCloudWatch-linux-1
+    - Which region do you want to store the config in the parameter store? = ap-south-2
+    - Which AWS credential should be used to send json config to parameter store? = other 
+      - It is asking for credentials to upload the json config file AWS access keys: secret keys etc...give it.
+    - Location of Parameter Store SSM > Parameter Store.
+
+
+
+
 
 ## 19. AWS Backup (Vaults)
 
