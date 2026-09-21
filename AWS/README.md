@@ -438,7 +438,7 @@ then we install CloudWatchAgent, it uses parameter store to monitor the Instance
   
 7. Configure an Alarms (Alert)
    
-      - go to ClouadWatch > Alaram or From the Ec2 Machines CPU to metrics > Graphed metrics tab [below you will find a Action column there is an Alaram symbal of Bell click that]
+      - go to CloudWatch > Alarm or From the Ec2 Machines CPU to metrics > Graphed metrics tab [below you will find a Action column there is an Alaram symbal of Bell click that]
       - Data Source = Metrics
       - Type = Classic 
       - Keep the CPUUtilization setting as default except Statistic = Maximum & Whenever CPUUtilization is = Greater/Equal than 41 in the input value threshold value.
