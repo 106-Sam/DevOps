@@ -390,7 +390,7 @@ then we install CloudWatchAgent, it uses parameter store to monitor the Instance
 
 4.  Configuration of CloudWatchAgent & Store in Parameter Store
   
-    - connect to the Ec2 Mcahine via SSH 
+    - connect to the Ec2 Machine via SSH 
     - cd /opt/amazon-cloudwatch-agent/bin/ [OPT directory basically used for thirdparty application/addons]
     - ls & ./amazon-cloudwatch-agent-config-wizard
     - Which OS = linux
