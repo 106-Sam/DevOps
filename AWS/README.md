@@ -420,7 +420,7 @@ then we install CloudWatchAgent, it uses parameter store to monitor the Instance
 
       - SSM > Run command > Run a command 
       - Select AmazonCloudWatch-ManageAgent
-      - Optional Configuration Location = <Name of the Parameter Store>
+      - Optional Configuration Location = "Name of the Parameter Store"
       - Target Selection = Choose Instance manually
       - select the EC2 Instance created
       - disable S3 bucket & CloudWatch logs
