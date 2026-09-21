@@ -22,6 +22,7 @@
 18. Cloud Trail and Config
 19. [AWS Backup (Vaults)](https://github.com/106-sam/DevOps/tree/main/AWS#19-aws-backup-vaults)
 20. [VPN & connection between AZURE & AWS](https://github.com/106-sam/DevOps/tree/main/AWS#20-vpn--connection-between-azure--aws-machines)
+21. [DynamoDB, Lambda function, API Gateway]()
 
 --- 
 
@@ -420,3 +421,6 @@ AWS:
 
 
 Step9 - in Azure - [click here](https://github.com/106-Sam/DevOps/tree/main/AZURE#2-vpn-gateway-for-connection-between-the-aws--azure-machine)
+
+
+## 21. DynamoDB, Lambda Function, API Gateway
