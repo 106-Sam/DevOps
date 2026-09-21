@@ -382,6 +382,7 @@ then we install CloudWatchAgent, it uses parameter store to monitor the Instance
 3. Push AWSPackage via SSM to EC2 instance
    
       - SSM > Run command > Run a command
+      - select AWS-ConfigureAWSPackage
       - Name = AmazonCloudWatchAgent (Case-Sensitive and it must be same)
       - Target Selection = Choose Instance Manually
       - select the Instance that you created
