@@ -448,3 +448,32 @@ Create an Item,
 
 
 DynamoD is a Paas model, c
+
+
+## 22. ACM (AWS Certificate Manager)
+
+Generate https certificate but only for internal resources like Load Balancer
+
+Public & Private certificate is provided for normal certificate vendor but AWS only provides Public certificates therefore we can only use it for interal resources.
+
+Generally to use secured HTTPS service we need an SSL certificates.
+
+- We can create certificate from Ubuntu Machine
+
+1. Create certificate using AWS ==> ACM
+2. Import certificate in ACM
+
+Create Certificates outside AWS
+
+How SSl certificate authentication 
+
+create a certificated.
+
+.pfx => load
+password: certificateyes 
+
+
+- EC2 machine => Certbot install => generate SSL certificates
+Import in ACM.
+
+can purchase ssl Certificate from vendor [godaddy]
