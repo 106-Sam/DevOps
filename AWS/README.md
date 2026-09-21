@@ -424,3 +424,11 @@ Step9 - in Azure - [click here](https://github.com/106-Sam/DevOps/tree/main/AZUR
 
 
 ## 21. DynamoDB, Lambda Function, API Gateway
+
+
+DynamoDB > Tables > Bookstore as name > Create Table. 
+Create an Item,
+
+
+
+DynamoD is a Paas model, c
