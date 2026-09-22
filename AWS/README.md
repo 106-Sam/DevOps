@@ -1,4 +1,4 @@
-# AWS - Amazon Web Service
+va# AWS - Amazon Web Service
 
 **Index of Content**
 
@@ -502,6 +502,21 @@ Step3: Create load balancer
       - Create an empty target group leave it default don't add the instance we just created for Custom Image 
 
 Step4: Create AutoScalingGroup with Load Balancer
+
+      - go to EC2 > Auto Scaling Groups > Create ASG 
+      - Provide a name to Auto Scaling Group name 
+      - Select the Launch Template > Next 
+      - Availability Zone and Subnets = select all the Subnets & aZone
+      - Next, Select Load balancing options = Attach to an existing load balancer
+      - Choose from your load balancer TG
+      - Select the Exisiting load balancer target groups = Select the NLB created by us before.
+      - Health Check grace period = 30 seconds 
+      - Desired Capacity = 1 
+      - Scaling = Min desired capacity = 1 Max desired capacity = 4 
+      - Automatic Scaling = No Scaling Policy
+      - Instance maintenance policy  = No
+      - Next, Next, Next, Create ASG 
+
 
 Step5: CloudWatch: Alarm create 40% cpu ==> Alarm & 20% cpu Alarm Create
 
