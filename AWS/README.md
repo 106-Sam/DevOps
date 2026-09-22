@@ -456,7 +456,58 @@ then we install CloudWatchAgent, it uses parameter store to monitor the Instance
 
 ## 17. Auto Scaling Group(ASG)
 
+There are two type of Scaling: 
 
+1. Vertical Scaling
+   
+   - upgrading instance type => t3.micro
+   - We use vertical scaling for any file sharing or db servers 
+   - To upgrade or degrade we need to stop the EC2 instance > Change instance type > t3.medium
+
+2. Horizontal Scaling (AutoScalingGroup)
+   
+   - adding up your machines
+   - Scaling condition: 
+     - if cpu% is 70 equal or above: 3 machines should add up
+     - if cpu% is 50 less or below: 3 machines should decrease
+
+raw image is the normal AMI available on the AWS 
+
+How to setup ASG:
+
+Step1: Custom Image
+
+      - Image creation are of 2 types: 
+      - manaul and packer
+      - Create an EC2 instance with normal default settings
+      - Install nginx in it
+      - Select the EC2 instance and actions > Image and templates > Create Image
+      - Provide the name to the image > create Image
+      - EC2 > AMIs (you will the created Image here)
+      - Delete the running instance as we have now created custom image 
+
+Step2: Launch Template
+
+      - go to EC2 > Launch Template > create launch template
+      - Give LT some name & In OS image select "My AMIs" tab and select the custom image we created.
+      - Add the Keypair, VPC, subnet.
+      - Select existing security group (SG) and select ur SG and go to Advanced network configuration and Enable Auto Assign IP address.
+      - Launch instance for template 
+
+Step3: Create load balancer
+
+      - EC2 > Load Balancer > Network Load > Internet facing
+      - select VPC & availability zones 
+      - Listener port = 80 
+      - Create an empty target group leave it default don't add the instance we just created for Custom Image 
+
+Step4: Create AutoScalingGroup with Load Balancer
+
+Step5: CloudWatch: Alarm create 40% cpu ==> Alarm & 20% cpu Alarm Create
+
+Step6: Adding scaling condition in ASG 
+
+Step7: Put load on this machine
 
 
 ## 19. AWS Backup (Vaults)
