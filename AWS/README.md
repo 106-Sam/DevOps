@@ -517,12 +517,30 @@ Step4: Create AutoScalingGroup with Load Balancer
       - Instance maintenance policy  = No
       - Next, Next, Next, Create ASG 
 
+Step5: CloudWatch: Alarm create 40% cpu ==> Alarm & 35% cpu Alarm Create
 
-Step5: CloudWatch: Alarm create 40% cpu ==> Alarm & 20% cpu Alarm Create
+      - EC2 Instance settings > CPU utilization > 1 mins > bell icon > Greater/Equal > Than 40 
+      - Next, In alarm, Create new topic > name123 > email123 > create a topic 
+      - Check your mail and confirm the subscription
+      - Give Alarm name > create alarm 
+      - select the created alarm > action > copy and edit the Lower/Equal to 35 and its alarm name
 
 Step6: Adding scaling condition in ASG 
 
+      - Go to ASG > check the configurations > Automatic Scaling tab > Create dynamic scaling policy
+      - Select Step scaling (It will add machines one by one as per the condition)
+      - give scaling policy name > select CloudWatch alarm = (created 40% alarm)
+      - Take the action = Add > 3  capacity units when 40 <= CPUUtilizations 
+      - instance warmup = 30 seconds 
+      - Create one more dynamic scaling policy for 35% but select Simple Scaling (which remove-machines) 
+      - Take the action = Remove > 3 capacity units 
+      - instance warmup = 30 seconds 
+
 Step7: Put load on this machine
+
+      - connect to the EC2 Instances
+      - `apt install stress`
+      - `stress `
 
 
 ## 19. AWS Backup (Vaults)
