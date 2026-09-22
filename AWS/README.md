@@ -18,7 +18,7 @@
 14. [RDS (Relational Database Scheme)](https://github.com/106-Sam/DevOps/tree/main/AWS#14-rds-relational-database-schema)
 15. [VPC Flow Logs](https://github.com/106-Sam/DevOps/tree/main/AWS#15-vpc-flow-log)
 16. [CloudWatch](https://github.com/106-Sam/DevOps/tree/main/AWS#16-cloudwatch)
-17. Auto Scaling Group (ASG)
+17. [Auto Scaling Group(ASG)](https://github.com/106-Sam/DevOps/tree/main/AWS#17-auto-scaling-groupasg)
 18. Cloud Trail and Config
 19. [AWS Backup (Vaults)](https://github.com/106-sam/DevOps/tree/main/AWS#19-aws-backup-vaults)
 20. [VPN & connection between AZURE & AWS](https://github.com/106-sam/DevOps/tree/main/AWS#20-vpn--connection-between-azure--aws-machines)
@@ -452,6 +452,12 @@ then we install CloudWatchAgent, it uses parameter store to monitor the Instance
 8.   Trigger the Alarms
 
       - Open EC2 Instance and type the command stress 
+
+
+## 17. Auto Scaling Group(ASG)
+
+
+
 
 ## 19. AWS Backup (Vaults)
 
