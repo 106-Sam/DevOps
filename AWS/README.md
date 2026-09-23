@@ -19,7 +19,7 @@ va# AWS - Amazon Web Service
 15. [VPC Flow Logs](https://github.com/106-Sam/DevOps/tree/main/AWS#15-vpc-flow-log)
 16. [CloudWatch](https://github.com/106-Sam/DevOps/tree/main/AWS#16-cloudwatch)
 17. [Auto Scaling Group(ASG)](https://github.com/106-Sam/DevOps/tree/main/AWS#17-auto-scaling-groupasg)
-18. Cloud Trail and Config
+18. [Cloud Trail and Config](https://github.com/106-Sam/DevOps/tree/main/AWS#18-CloudTrail-and-Config)
 19. [AWS Backup (Vaults)](https://github.com/106-sam/DevOps/tree/main/AWS#19-aws-backup-vaults)
 20. [VPN & connection between AZURE & AWS](https://github.com/106-sam/DevOps/tree/main/AWS#20-vpn--connection-between-azure--aws-machines)
 21. [DynamoDB, Lambda function, API Gateway]()
@@ -541,6 +541,13 @@ Step7: Put load on this machine
       - connect to the EC2 Instances
       - `apt install stress`
       - `stress `
+
+
+
+## 18. CloudTrail and Config
+
+
+
 
 
 ## 19. AWS Backup (Vaults)
