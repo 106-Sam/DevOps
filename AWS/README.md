@@ -543,7 +543,7 @@ Step7: Put load on this machine
       - `apt install stress`
       - `stress `
 
-## 18. CloudTrail and AWS Config
+## 18. CloudTrail
 
   
   CloudTrail records every activities performed by an entity like creating an Instance, VPC or connecting servers.
