@@ -19,10 +19,11 @@ va# AWS - Amazon Web Service
 15. [VPC Flow Logs](https://github.com/106-Sam/DevOps/tree/main/AWS#15-vpc-flow-log)
 16. [CloudWatch](https://github.com/106-Sam/DevOps/tree/main/AWS#16-cloudwatch)
 17. [Auto Scaling Group(ASG)](https://github.com/106-Sam/DevOps/tree/main/AWS#17-auto-scaling-groupasg)
-18. [Cloud Trail and Config](https://github.com/106-Sam/DevOps/tree/main/AWS#18-Cloud-Trail-and-Config)
-19. [AWS Backup (Vaults)](https://github.com/106-sam/DevOps/tree/main/AWS#19-aws-backup-vaults)
-20. [VPN & connection between AZURE & AWS](https://github.com/106-sam/DevOps/tree/main/AWS#20-vpn--connection-between-azure--aws-machines)
-21. [DynamoDB, Lambda function, API Gateway]()
+18. [CloudTrail](https://github.com/106-Sam/DevOps/tree/main/AWS#18-CloudTrail)
+19. [AWS Config](https://github.com/106-Sam/DevOps/tree/main/AWS#19-AWS-Config)
+20. [AWS Backup (Vaults)](https://github.com/106-sam/DevOps/tree/main/AWS#20-aws-backup-vaults)
+21. [VPN & connection between AZURE & AWS](https://github.com/106-sam/DevOps/tree/main/AWS#21-vpn--connection-between-azure--aws-machines)
+22. [DynamoDB, Lambda function, API Gateway]()
 
 --- 
 
@@ -542,15 +543,67 @@ Step7: Put load on this machine
       - `apt install stress`
       - `stress `
 
+## 18. CloudTrail and AWS Config
+
+  
+  CloudTrail records every activities performed by an entity like creating an Instance, VPC or connecting servers.
+
+- Management Events - all the API call an user made like for creating Instances etc.
+- Data Events - It records all the databases related events.
+- Insight Events - It records all the misconfiguration related to the Applications.
+- Network activity events - It records/track every traffic coming in and out.
+
+- Go to CloudTrail > Quick trail create > provide the name like "management-event" > Create
+- GO to CloudTrail > Dashboard > Event History > Click on View Full Event History
+- 
+  
+  Only Management Events work in the free trial/tier.
+  Everything is logged for 90 days after 90 days it get deleted.
+  If we want longer period then we can store the logs/events in the S3 bucket
 
 
-## 18. Cloud Trail and Config
+## 19. AWS Config
+
+AWS Config is all about Compliance. We can check the compliance related details.
+
+Normally, now while practicing we are creating instance with Public IP address, in case in the company if we create it will be automatically deleted.
+
+Another example is creating S3 bucket with versioning disabled.
+
+To create 
+
+  - go to AWS Config > Settings > Under 'Customer managed recorder' > click on 'Start Recording'
+  - go to AWS config > rules > Add rules > We have 766 rules we can add whatever rules we require
+  - rule name = ec2-instance-no-public-ip > It triggers a security team and they will contact you regarding this 
+  - select and create it.
+
+Manuall we need to got and disable the PIP or S3 bucket version to enabled.
+
+How to automatically remediate this: 
+
+      - Create an IAM role > Use case > System Manager > Next
+        - Give permission of S3 bucket full access & Administrator access or we can define custom policy for this. 
+        - Role name >  Create 
+        - keep role name & ARN handy.
+  
+      - AWS Config > Rules > S3-bucket version > actions > Manage remediation
+      - Select Remediation method = Automatic remedation
+      - Remediation action details = AWS-ConfigureS3BucketVersioning
+      - Resource ID parameter = BucketName
+      - Parameters 
+        -  VersioningState = Enabled
+        -  AutomationAssumeRole = paste the ARN form the above IAM role
+        -  Save changes 
+  
+  Now if we create an s3 bucket with Disable versioning it automatically changes to Enabled once created.
+
+  We can check under the rules > Noncompliant it will show executed Successfully.
+
+  we need to Stop the recording. Our bill will be more 
 
 
 
-
-
-## 19. AWS Backup (Vaults)
+## 20. AWS Backup (Vaults)
 
 We create the backs under the AWS Vault. And we can restore the backups from the Vault. 
 
@@ -585,7 +638,7 @@ How to Restore the backup ?
       - Now you have the Public IP 
 
 
-## 20. VPN & Connection between Azure & AWS Machines
+## 21. VPN & Connection between Azure & AWS Machines
 
 ![VPN-AzureAWS](https://github.com/106-Sam/DevOps/blob/main/AWS/files/VPN-AWSAZURE.png "Azure AWS")
 
@@ -619,7 +672,7 @@ AWS:
 Step9 - in Azure - [click here](https://github.com/106-Sam/DevOps/tree/main/AZURE#2-vpn-gateway-for-connection-between-the-aws--azure-machine)
 
 
-## 21. DynamoDB, Lambda Function, API Gateway
+## 22. DynamoDB, Lambda Function, API Gateway
 
 
 DynamoDB > Tables > Bookstore as name > Create Table. 
@@ -630,7 +683,7 @@ Create an Item,
 DynamoD is a Paas model, c
 
 
-## 22. ACM (AWS Certificate Manager)
+## 23. ACM (AWS Certificate Manager)
 
 Generate https certificate but only for internal resources like Load Balancer
 
