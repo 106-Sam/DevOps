@@ -518,7 +518,7 @@ Step4: Create AutoScalingGroup with Load Balancer
       - Instance maintenance policy  = No
       - Next, Next, Next, Create ASG 
 
-Step5: CloudWatch: Alarm create 40% cpu ==> Alarm & 35% cpu Alarm Create
+Step5: CloudWatch: Alarm create 40% cpu ==> Alarm & 35% cpu Alarm Create.   
 
       - EC2 Instance settings > CPU utilization > 1 mins > bell icon > Greater/Equal > Than 40 
       - Next, In alarm, Create new topic > name123 > email123 > create a topic 
@@ -577,7 +577,7 @@ To create
   - rule name = ec2-instance-no-public-ip > It triggers a security team and they will contact you regarding this 
   - select and create it.
 
-Manuall we need to got and disable the PIP or S3 bucket version to enabled.
+Manually we need to got and disable the PIP or S3 bucket version to enabled.
 
 How to automatically remediate this: 
 
